@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - portfolio Theme</title>
+    <meta name="description" content="An HTML portfolio theme built">
+    <meta name="keywords" content="portfolio, theme, bootstrap, grid">
+    <meta name="author" content="Park Hyunju">
+    <meta name="author" content="Park Hyunju">
+    <!-- 특별한 이유가 없는한 화면확대축소가 안되게 막아놓으면 안됨 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="container clearfix">
+            <h1 class="logo">
+                <a href="index.html">Logo</a>
+            </h1>
+            <nav>
+                <ul class="clearfix">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="portfolio.html">portfolio</a></li>
+                    <li><a href="about.html">about us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="page_banner about">
+        <h2 class="fancy-box gray main_tt">About</h2>
+    </div><!-- //page_banner-->
+    
+    <div class="main_content subpage container">
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        </p>
+        <p>
+        Address line 1<br />
+        Address line 2
+        </p>
+        <p>
+        To get in touch, simply email me at <a href="mailto:office@domain.com">office@domain.com.</a>
+        </p>
+    </div><!--//main_content-->
+    <footer>
+            <span class="envelope_icon fancy-box orange"> 
+                <i class="fas fa-envelope"></i>
+            </span>
+           <div class="subscribe">
+            <p>
+                Wanna see my latest photos? Enter your email below and I'll send you one email a month with the latest updates.
+            </p>
+            <form action="" method="post">
+                <!-- name=""에 작성할 값은 db를 설계한 사람한테 물어보고 작성해야함
+                     '사용자가 구독을 받는데 이게 데이터베이스 안에 들어가는 칸의 이름이무엇인지?'
+                     물어보고 작성--> 
+                <input type="email" name="email" placeholder="Your email address">
+                
+                <input type="submit" value="Subscribe" class="btn">
+            </form>
+        </div>
+        <p class="share">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </p>
+        <p class="copy">
+            &copy; 2018 portfolio theme
+        </p>
+    </footer>
+</body>
+</html>
