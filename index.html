@@ -7,15 +7,15 @@
     <meta name="keywords" content="portfolio, theme, bootstrap, grid">
     <meta name="author" content="Park Hyunju">
     <meta name="author" content="Park Hyunju">
-   
+    <!-- 특별한 이유가 없는한 화면확대축소가 안되게 막아놓으면 안됨 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
     
     <!-- include jQuery & cycle2 -->
-    <script src="libs/jquery-1.12.4.min.js"></script>
-    <script src="libs/jquery.cycle2.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
 </head>
 <body>
     <header>
@@ -38,7 +38,7 @@
         <ul class="banner_list cycle-slideshow" 
             data-cycle-fx="scrollHorz" 
             data-cycle-timeout="0"
-            data-cycle-slides=" .slide"
+            data-cycle-slides=".slide"
             data-cycle-prev=".banner .prev"
             data-cycle-next=".banner .next"
             data-cycle-pager=".banner .pager"
@@ -125,6 +125,9 @@
                 Wanna see my latest photos? Enter your email below and I'll send you one email a month with the latest updates.
             </p>
             <form action="" method="post">
+                <!-- name=""에 작성할 값은 db를 설계한 사람한테 물어보고 작성해야함
+                     '사용자가 구독을 받는데 이게 데이터베이스 안에 들어가는 칸의 이름이무엇인지?'
+                     물어보고 작성--> 
                 <input type="email" name="email" placeholder="Your email address">
                 
                 <input type="submit" value="Subscribe" class="btn">
